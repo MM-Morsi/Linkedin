@@ -4,27 +4,39 @@ Yarn package ::
 --> Super fast because it makes caches (on all projets you use)
     Stores in the desk locally and fetches everytime you call it back. 
 ------------------------------------------------------------------
+yarn start 
+To start the application >> port 3000 is the default 
+------------------------------------------------------------------
 npx create-react-app linkedin-clone
 ------------------------------------------------------------------
 sudo kill -9 $(sudo lsof -t -i:3000)
 This is to kill the process taking port 3000
 ------------------------------------------------------------------
-Learn about the emoje usage in react
+Learn about the emoji usage in react
 ------------------------------------------------------------------
-publicc > index.html 
+TO MAKE LINKEDIN LOGO APPEAR IN THE BROWESER
+[] public > index.html 
 <link rel="icon" href="%PUBLIC_URL%/images/linkedin.png" />
-to get the linked in logo in the browser
 
 <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/linkedin.png" />
 ------------------------------------------------------------------
+
+
+------------------------------------------------------------------
+COMMON STYLING FOR LINKEDIN
+[] index.css
 :root 
 https://css-tricks.com/almanac/selectors/r/root/#:~:text=The%20%3Aroot%20selector%20allows%20you,with%20parent%20and%20sibling%20content.
---> This (pseudo class) is more spesigic than html (tyoe selector)
+--> This (pseudo class) is more spesific than html (tyoe selector)
 https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes 
 ------------------------------------------------------------------
 https://www.w3schools.com/css/css3_box-sizing.asp
 --> include the border size in the width and the height
 ------------------------------------------------------------------
+COMPONTENTS IN REACT
+the component.js files are created manually 
+------------------------------------------------------------------
+TO WORK ON COMPONTENTS >> USE ROUTING
 yarn add === npm install 
 yarn add react-router-dom
 --> To use react routers 
@@ -35,15 +47,32 @@ react router components
 Route >> exact path ="/"
 --> This is the home page 
 ------------------------------------------------------------------
+[] App.js
+components 
+We import the react components we are using here
+this is to work on the routing process
+
+To make the routing work
+* import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+* <> <> Router Sitch Route tags 
+* Route exact path >> from the application
+    https://stackoverflow.com/questions/49162311/react-difference-between-route-exact-path-and-route-path
+    This is to disable partial matching 
+    /user/create & /user are 2 paths that won't appear instead of each others now
+------------------------------------------------------------------
+[] Login.js
 const Container = styled.div``;
 const Nav = styled.nav``;
+const Name = styled.(any known element)``;
 
 When you add a component in the compnent.js files (Login.js)
 You need to add the styles for react to understand
+This is done to identify semantic tags like: Container
+tags like "a" or "div" don't need this
 ------------------------------------------------------------------
 & > a {}
 Sass
-anything inside the a tag
+styling css for anything inside the a tag
 ------------------------------------------------------------------
 @media (max-width: 768px){
             padding: 0 5px;
@@ -57,3 +86,8 @@ const Join = styled.a`
 
 What is this ? notice you can't jsut say 
 const Join = styled.join``; WRONG
+------------------------------------------------------------------
+There are function and class components in react 
+https://reactjs.org/docs/components-and-props.html
+
+

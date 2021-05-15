@@ -1,11 +1,11 @@
 body{
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-y: scroll; /* you can see the scrolling up and down */
+    overflow-x: hidden; /* you don't see bars for right and left */
 }
 
 :root, body, html{
     background-color: #f5f5f5;
-    box-sizing: border-box;
+    box-sizing: border-box; /* fitting the application */
 }
 
 div, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, nav, p, small, span, ul{
@@ -14,7 +14,7 @@ div, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, nav, p, small, spa
     border: 0;
     outline: none;
     font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+    vertical-align: baseline; /* text on the vertical baseline not above or below*/ 
+    background: transparent; 
 }
 
