@@ -90,4 +90,9 @@ const Join = styled.join``; WRONG
 There are function and class components in react 
 https://reactjs.org/docs/components-and-props.html
 
-
+------------------------------------------------------------------
+ADDING FONTS TO THE PROJECT
+[] index.css
+body {
+    font-family: Arial, sans-serif;
+}

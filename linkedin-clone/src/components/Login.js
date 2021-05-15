@@ -15,6 +15,9 @@ const Login = (props) => {
                     <Join>
                         Join Now
                     </Join>
+                    <SignIn>
+                        Sign in
+                    </SignIn>
                 </div>
             </Nav>
         </Container>
@@ -46,9 +49,39 @@ const Nav = styled.nav`
 `;
 
 const Join = styled.a`
-    color: grey;
-    font-weight: 800;   
+    font-size: 16px;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius:4px;
+    color: rgba(0, 0, 0, 0.6);  
+    margin-right: 12px;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        color: rgba(0, 0, 0, 0.9);
+        text-decoration: none;
+        cursor: pointer;
+    } 
     
 `;
 
+const SignIn = styled.a`
+    box-shadow: inset 0 0 0 1px #0a66c2;
+    color: #0a66c2;
+    border-radius: 24px;
+    transition-duration: 200ms; // for hovering later on
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px; // space above and below inline elements
+    padding: 10px 24px;
+    // till now the sign in is split in half >> fix that later?
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    &:hover{
+        background-color: rgba(112,181,249,0.15);
+        color: #0a66c2;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+`;
 export default Login;
