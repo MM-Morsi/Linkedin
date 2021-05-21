@@ -25,6 +25,13 @@ const Login = (props) => {
                     <h1>Welcome to your professional community</h1>
                     <img src="/images/login-hero.svg"></img>
                 </Hero>
+
+                <Form>
+                    <Google>
+                        <img src="/images/google.svg" alt="Google logo"></img>
+                        Sign in with Google
+                    </Google>
+                </Form>
             </Section>
         </Container>
     );
@@ -140,5 +147,24 @@ const Hero = styled.div`
             height: initial;
         }
     }
+`;
+
+const Form = styled.div`
+    margin-top: 100px;
+    width: 400px;
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+`;
+
+const Google = styled.button`
+    display: flex; 
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%), inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0);
 `;
 export default Login;
