@@ -65,7 +65,7 @@ const Join = styled.a`
     font-size: 16px;
     padding: 10px 12px;
     text-decoration: none;
-    border-radius:4px;
+    border-radius:25px;
     color: rgba(0, 0, 0, 0.6);  
     margin-right: 12px;
     &:hover {
@@ -166,5 +166,15 @@ const Google = styled.button`
     width: 100%;
     border-radius: 30px;
     box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%), inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0);
+
+    vertical-align: middle;
+    z-index:0;
+    transition-duration: 176ms; // this is for hovering
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    &:hover {
+        background-color: rgba(207, 207, 207, 0.25);
+        color: rgba(0, 0, 0, .75)
+    }
 `;
 export default Login;
